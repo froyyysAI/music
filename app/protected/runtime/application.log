@@ -1,0 +1,1684 @@
+2014/05/27 05:12:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "indx".' in D:\wamp\www\music\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\music\framework\web\CController.php(270): CController->missingAction('indx')
+#1 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('indx')
+#2 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('Index/indx')
+#3 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\wamp\www\music\app\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/music/app/?r=Index/indx
+---
+2014/06/03 07:34:05 [error] [php] include(User.php): failed to open stream: No such file or directory (D:\wamp\www\music\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\www\music\app\protected\components\UserIdentity.php(14): spl_autoload_call()
+#1 D:\wamp\www\music\app\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#2 D:\wamp\www\music\framework\validators\CInlineValidator.php(42): LoginForm->authenticate()
+#3 D:\wamp\www\music\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute()
+#4 D:\wamp\www\music\framework\base\CModel.php(159): CInlineValidator->validate()
+#5 D:\wamp\www\music\app\protected\controllers\SiteController.php(95): LoginForm->validate()
+#6 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#7 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\wamp\www\music\framework\web\CController.php(286): SiteController->runAction()
+#9 D:\wamp\www\music\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 D:\wamp\www\music\framework\web\CWebApplication.php(282): SiteController->run()
+#11 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=site/login
+in D:\wamp\www\music\app\protected\components\UserIdentity.php (14)
+in D:\wamp\www\music\app\protected\models\LoginForm.php (52)
+in D:\wamp\www\music\app\protected\controllers\SiteController.php (95)
+2014/06/03 07:39:21 [error] [php] include(SBaseController.php): failed to open stream: No such file or directory (D:\wamp\www\music\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\www\music\app\protected\controllers\AdminController.php(4): spl_autoload_call()
+#1 D:\wamp\www\music\framework\web\CWebApplication.php(354): require()
+#2 D:\wamp\www\music\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#3 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=admin
+in D:\wamp\www\music\app\protected\controllers\AdminController.php (4)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 07:41:06 [error] [exception.CException] exception 'CException' with message 'Alias "srbac.components.Helper" is invalid. Make sure it points to an existing directory or file.' in D:\wamp\www\music\framework\YiiBase.php:341
+Stack trace:
+#0 D:\wamp\www\music\app\protected\modules\srbac\controllers\SBaseController.php(22): YiiBase::import('srbac.component...')
+#1 D:\wamp\www\music\framework\YiiBase.php(395): include('D:\\wamp\\www\\mus...')
+#2 [internal function]: YiiBase::autoload('SBaseController')
+#3 D:\wamp\www\music\app\protected\controllers\AdminController.php(4): spl_autoload_call('SBaseController')
+#4 D:\wamp\www\music\framework\web\CWebApplication.php(354): require('D:\\wamp\\www\\mus...')
+#5 D:\wamp\www\music\framework\web\CWebApplication.php(276): CWebApplication->createController('admin')
+#6 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#7 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 D:\wamp\www\music\app\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/music/app/index.php?r=admin
+---
+2014/06/03 07:43:19 [error] [exception.CException] exception 'CException' with message 'Property "AdminController.breadcrumbs" is not defined.' in D:\wamp\www\music\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\music\app\protected\views\admin\index.php(4): CComponent->__set('breadcrumbs', Array)
+#1 D:\wamp\www\music\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\mus...')
+#2 D:\wamp\www\music\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\mus...', NULL, true)
+#3 D:\wamp\www\music\framework\web\CController.php(869): CBaseController->renderFile('D:\\wamp\\www\\mus...', NULL, true)
+#4 D:\wamp\www\music\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#5 D:\wamp\www\music\app\protected\controllers\AdminController.php(6): CController->render('index')
+#6 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#7 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\music\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\music\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('')
+#11 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#12 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 D:\wamp\www\music\app\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/music/app/index.php?r=admin
+---
+2014/06/03 07:47:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "rbac".' in D:\wamp\www\music\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('rbac')
+#1 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\www\music\app\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/music/app/index.php?r=rbac
+---
+2014/06/03 07:47:35 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `items`.
+in D:\wamp\www\music\app\protected\modules\srbac\models\AuthItem.php (40)
+in D:\wamp\www\music\app\protected\modules\srbac\SrbacModule.php (248)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (45)
+2014/06/03 07:47:35 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `items`.
+in D:\wamp\www\music\app\protected\modules\srbac\models\AuthItem.php (40)
+in D:\wamp\www\music\app\protected\modules\srbac\SrbacModule.php (248)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (45)
+2014/06/03 07:47:35 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid.
+in D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php (34)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (53)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 07:47:35 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid' in D:\wamp\www\music\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\wamp\www\music\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php(34): CDbCommand->queryAll()
+#2 D:\wamp\www\music\framework\web\auth\CWebUser.php(806): SDbAuthManager->checkAccess('system', NULL, Array)
+#3 D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php(53): CWebUser->checkAccess('system')
+#4 D:\wamp\www\music\framework\web\CController.php(306): AuthitemController->beforeAction(Object(CInlineAction))
+#5 D:\wamp\www\music\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\music\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('install')
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/music/app/index.php?r=srbac/authitem/install
+---
+2014/06/03 07:48:39 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `items`.
+in D:\wamp\www\music\app\protected\modules\srbac\models\AuthItem.php (40)
+in D:\wamp\www\music\app\protected\modules\srbac\SrbacModule.php (248)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (45)
+2014/06/03 07:48:39 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid.
+in D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php (34)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (53)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 07:48:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid' in D:\wamp\www\music\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\wamp\www\music\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php(34): CDbCommand->queryAll()
+#2 D:\wamp\www\music\framework\web\auth\CWebUser.php(806): SDbAuthManager->checkAccess('system', NULL, Array)
+#3 D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php(53): CWebUser->checkAccess('system')
+#4 D:\wamp\www\music\framework\web\CController.php(306): AuthitemController->beforeAction(Object(CInlineAction))
+#5 D:\wamp\www\music\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\music\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('install')
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/music/app/index.php?r=srbac/authitem/install
+---
+2014/06/03 07:49:57 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `items`.
+in D:\wamp\www\music\app\protected\modules\srbac\models\AuthItem.php (40)
+in D:\wamp\www\music\app\protected\modules\srbac\SrbacModule.php (248)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (45)
+2014/06/03 07:49:57 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `items`.
+in D:\wamp\www\music\app\protected\modules\srbac\models\AuthItem.php (40)
+in D:\wamp\www\music\app\protected\modules\srbac\SrbacModule.php (248)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (45)
+2014/06/03 07:49:57 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid.
+in D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php (34)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (53)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 07:49:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid' in D:\wamp\www\music\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\wamp\www\music\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php(34): CDbCommand->queryAll()
+#2 D:\wamp\www\music\framework\web\auth\CWebUser.php(806): SDbAuthManager->checkAccess('system', NULL, Array)
+#3 D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php(53): CWebUser->checkAccess('system')
+#4 D:\wamp\www\music\framework\web\CController.php(306): AuthitemController->beforeAction(Object(CInlineAction))
+#5 D:\wamp\www\music\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\music\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('install')
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/music/app/index.php?r=srbac/authitem/install
+---
+2014/06/03 07:55:26 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `items`.
+in D:\wamp\www\music\app\protected\modules\srbac\models\AuthItem.php (40)
+in D:\wamp\www\music\app\protected\modules\srbac\SrbacModule.php (248)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (45)
+2014/06/03 07:55:26 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid.
+in D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php (34)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (53)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 07:55:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid' in D:\wamp\www\music\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\wamp\www\music\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php(34): CDbCommand->queryAll()
+#2 D:\wamp\www\music\framework\web\auth\CWebUser.php(806): SDbAuthManager->checkAccess('system', NULL, Array)
+#3 D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php(53): CWebUser->checkAccess('system')
+#4 D:\wamp\www\music\framework\web\CController.php(306): AuthitemController->beforeAction(Object(CInlineAction))
+#5 D:\wamp\www\music\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\music\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('install')
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/music/app/index.php?r=srbac/authitem/install
+---
+2014/06/03 07:55:27 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `items`.
+in D:\wamp\www\music\app\protected\modules\srbac\models\AuthItem.php (40)
+in D:\wamp\www\music\app\protected\modules\srbac\SrbacModule.php (248)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (45)
+2014/06/03 07:55:27 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid.
+in D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php (34)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (53)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 07:55:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid' in D:\wamp\www\music\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\wamp\www\music\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php(34): CDbCommand->queryAll()
+#2 D:\wamp\www\music\framework\web\auth\CWebUser.php(806): SDbAuthManager->checkAccess('system', NULL, Array)
+#3 D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php(53): CWebUser->checkAccess('system')
+#4 D:\wamp\www\music\framework\web\CController.php(306): AuthitemController->beforeAction(Object(CInlineAction))
+#5 D:\wamp\www\music\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\music\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('install')
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/music/app/index.php?r=srbac/authitem/install
+---
+2014/06/03 07:55:27 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `items`.
+in D:\wamp\www\music\app\protected\modules\srbac\models\AuthItem.php (40)
+in D:\wamp\www\music\app\protected\modules\srbac\SrbacModule.php (248)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (45)
+2014/06/03 07:55:27 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid.
+in D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php (34)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (53)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 07:55:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid' in D:\wamp\www\music\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\wamp\www\music\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php(34): CDbCommand->queryAll()
+#2 D:\wamp\www\music\framework\web\auth\CWebUser.php(806): SDbAuthManager->checkAccess('system', NULL, Array)
+#3 D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php(53): CWebUser->checkAccess('system')
+#4 D:\wamp\www\music\framework\web\CController.php(306): AuthitemController->beforeAction(Object(CInlineAction))
+#5 D:\wamp\www\music\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\music\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('install')
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/music/app/index.php?r=srbac/authitem/install
+---
+2014/06/03 07:55:27 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `items`.
+in D:\wamp\www\music\app\protected\modules\srbac\models\AuthItem.php (40)
+in D:\wamp\www\music\app\protected\modules\srbac\SrbacModule.php (248)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (45)
+2014/06/03 07:55:27 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid.
+in D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php (34)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (53)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 07:55:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid' in D:\wamp\www\music\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\wamp\www\music\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php(34): CDbCommand->queryAll()
+#2 D:\wamp\www\music\framework\web\auth\CWebUser.php(806): SDbAuthManager->checkAccess('system', NULL, Array)
+#3 D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php(53): CWebUser->checkAccess('system')
+#4 D:\wamp\www\music\framework\web\CController.php(306): AuthitemController->beforeAction(Object(CInlineAction))
+#5 D:\wamp\www\music\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\music\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('install')
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/music/app/index.php?r=srbac/authitem/install
+---
+2014/06/03 07:55:27 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `items`.
+in D:\wamp\www\music\app\protected\modules\srbac\models\AuthItem.php (40)
+in D:\wamp\www\music\app\protected\modules\srbac\SrbacModule.php (248)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (45)
+2014/06/03 07:55:27 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid.
+in D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php (34)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (53)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 07:55:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid' in D:\wamp\www\music\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\wamp\www\music\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php(34): CDbCommand->queryAll()
+#2 D:\wamp\www\music\framework\web\auth\CWebUser.php(806): SDbAuthManager->checkAccess('system', NULL, Array)
+#3 D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php(53): CWebUser->checkAccess('system')
+#4 D:\wamp\www\music\framework\web\CController.php(306): AuthitemController->beforeAction(Object(CInlineAction))
+#5 D:\wamp\www\music\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\music\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('install')
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/music/app/index.php?r=srbac/authitem/install
+---
+2014/06/03 07:55:27 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `items`.
+in D:\wamp\www\music\app\protected\modules\srbac\models\AuthItem.php (40)
+in D:\wamp\www\music\app\protected\modules\srbac\SrbacModule.php (248)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (45)
+2014/06/03 07:55:27 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid.
+in D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php (34)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (53)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 07:55:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid' in D:\wamp\www\music\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\wamp\www\music\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php(34): CDbCommand->queryAll()
+#2 D:\wamp\www\music\framework\web\auth\CWebUser.php(806): SDbAuthManager->checkAccess('system', NULL, Array)
+#3 D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php(53): CWebUser->checkAccess('system')
+#4 D:\wamp\www\music\framework\web\CController.php(306): AuthitemController->beforeAction(Object(CInlineAction))
+#5 D:\wamp\www\music\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\music\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('install')
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/music/app/index.php?r=srbac/authitem/install
+---
+2014/06/03 07:55:28 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `items`.
+in D:\wamp\www\music\app\protected\modules\srbac\models\AuthItem.php (40)
+in D:\wamp\www\music\app\protected\modules\srbac\SrbacModule.php (248)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (45)
+2014/06/03 07:55:28 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid.
+in D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php (34)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (53)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 07:55:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid' in D:\wamp\www\music\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\wamp\www\music\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php(34): CDbCommand->queryAll()
+#2 D:\wamp\www\music\framework\web\auth\CWebUser.php(806): SDbAuthManager->checkAccess('system', NULL, Array)
+#3 D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php(53): CWebUser->checkAccess('system')
+#4 D:\wamp\www\music\framework\web\CController.php(306): AuthitemController->beforeAction(Object(CInlineAction))
+#5 D:\wamp\www\music\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\music\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('install')
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/music/app/index.php?r=srbac/authitem/install
+---
+2014/06/03 07:59:06 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `items`.
+in D:\wamp\www\music\app\protected\modules\srbac\models\AuthItem.php (40)
+in D:\wamp\www\music\app\protected\modules\srbac\SrbacModule.php (248)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (43)
+2014/06/03 07:59:06 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid.
+in D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php (34)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (51)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 07:59:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid' in D:\wamp\www\music\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\wamp\www\music\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php(34): CDbCommand->queryAll()
+#2 D:\wamp\www\music\framework\web\auth\CWebUser.php(806): SDbAuthManager->checkAccess('system', NULL, Array)
+#3 D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php(51): CWebUser->checkAccess('system')
+#4 D:\wamp\www\music\framework\web\CController.php(306): AuthitemController->beforeAction(Object(CInlineAction))
+#5 D:\wamp\www\music\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\music\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('install')
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/music/app/index.php?r=srbac/authitem/install
+---
+2014/06/03 07:59:07 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `items`.
+in D:\wamp\www\music\app\protected\modules\srbac\models\AuthItem.php (40)
+in D:\wamp\www\music\app\protected\modules\srbac\SrbacModule.php (248)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (43)
+2014/06/03 07:59:07 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid.
+in D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php (34)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (51)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 07:59:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid' in D:\wamp\www\music\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\wamp\www\music\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php(34): CDbCommand->queryAll()
+#2 D:\wamp\www\music\framework\web\auth\CWebUser.php(806): SDbAuthManager->checkAccess('system', NULL, Array)
+#3 D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php(51): CWebUser->checkAccess('system')
+#4 D:\wamp\www\music\framework\web\CController.php(306): AuthitemController->beforeAction(Object(CInlineAction))
+#5 D:\wamp\www\music\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\music\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('install')
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/music/app/index.php?r=srbac/authitem/install
+---
+2014/06/03 07:59:11 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `items`.
+in D:\wamp\www\music\app\protected\modules\srbac\models\AuthItem.php (40)
+in D:\wamp\www\music\app\protected\modules\srbac\SrbacModule.php (248)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (43)
+2014/06/03 07:59:11 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid.
+in D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php (34)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (51)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 07:59:11 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid' in D:\wamp\www\music\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\wamp\www\music\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php(34): CDbCommand->queryAll()
+#2 D:\wamp\www\music\framework\web\auth\CWebUser.php(806): SDbAuthManager->checkAccess('system', NULL, Array)
+#3 D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php(51): CWebUser->checkAccess('system')
+#4 D:\wamp\www\music\framework\web\CController.php(306): AuthitemController->beforeAction(Object(CInlineAction))
+#5 D:\wamp\www\music\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\music\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('install')
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/music/app/index.php?r=srbac/authitem/install
+---
+2014/06/03 07:59:12 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `items`.
+in D:\wamp\www\music\app\protected\modules\srbac\models\AuthItem.php (40)
+in D:\wamp\www\music\app\protected\modules\srbac\SrbacModule.php (248)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (43)
+2014/06/03 07:59:12 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid.
+in D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php (34)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (51)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 07:59:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid' in D:\wamp\www\music\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\wamp\www\music\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php(34): CDbCommand->queryAll()
+#2 D:\wamp\www\music\framework\web\auth\CWebUser.php(806): SDbAuthManager->checkAccess('system', NULL, Array)
+#3 D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php(51): CWebUser->checkAccess('system')
+#4 D:\wamp\www\music\framework\web\CController.php(306): AuthitemController->beforeAction(Object(CInlineAction))
+#5 D:\wamp\www\music\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\music\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('install')
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/music/app/index.php?r=srbac/authitem/install
+---
+2014/06/03 07:59:12 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `items`.
+in D:\wamp\www\music\app\protected\modules\srbac\models\AuthItem.php (40)
+in D:\wamp\www\music\app\protected\modules\srbac\SrbacModule.php (248)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (43)
+2014/06/03 07:59:12 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid.
+in D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php (34)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (51)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 07:59:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid' in D:\wamp\www\music\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\wamp\www\music\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php(34): CDbCommand->queryAll()
+#2 D:\wamp\www\music\framework\web\auth\CWebUser.php(806): SDbAuthManager->checkAccess('system', NULL, Array)
+#3 D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php(51): CWebUser->checkAccess('system')
+#4 D:\wamp\www\music\framework\web\CController.php(306): AuthitemController->beforeAction(Object(CInlineAction))
+#5 D:\wamp\www\music\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\music\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('install')
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/music/app/index.php?r=srbac/authitem/install
+---
+2014/06/03 07:59:12 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `items`.
+in D:\wamp\www\music\app\protected\modules\srbac\models\AuthItem.php (40)
+in D:\wamp\www\music\app\protected\modules\srbac\SrbacModule.php (248)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (43)
+2014/06/03 07:59:12 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid.
+in D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php (34)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (51)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 07:59:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid' in D:\wamp\www\music\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\wamp\www\music\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php(34): CDbCommand->queryAll()
+#2 D:\wamp\www\music\framework\web\auth\CWebUser.php(806): SDbAuthManager->checkAccess('system', NULL, Array)
+#3 D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php(51): CWebUser->checkAccess('system')
+#4 D:\wamp\www\music\framework\web\CController.php(306): AuthitemController->beforeAction(Object(CInlineAction))
+#5 D:\wamp\www\music\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\music\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('install')
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/music/app/index.php?r=srbac/authitem/install
+---
+2014/06/03 07:59:12 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `items`.
+in D:\wamp\www\music\app\protected\modules\srbac\models\AuthItem.php (40)
+in D:\wamp\www\music\app\protected\modules\srbac\SrbacModule.php (248)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (43)
+2014/06/03 07:59:12 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid.
+in D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php (34)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (51)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 07:59:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid' in D:\wamp\www\music\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\wamp\www\music\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php(34): CDbCommand->queryAll()
+#2 D:\wamp\www\music\framework\web\auth\CWebUser.php(806): SDbAuthManager->checkAccess('system', NULL, Array)
+#3 D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php(51): CWebUser->checkAccess('system')
+#4 D:\wamp\www\music\framework\web\CController.php(306): AuthitemController->beforeAction(Object(CInlineAction))
+#5 D:\wamp\www\music\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\music\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('install')
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/music/app/index.php?r=srbac/authitem/install
+---
+2014/06/03 07:59:14 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `items`.
+in D:\wamp\www\music\app\protected\modules\srbac\models\AuthItem.php (40)
+in D:\wamp\www\music\app\protected\modules\srbac\SrbacModule.php (248)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (43)
+2014/06/03 07:59:14 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid.
+in D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php (34)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (51)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 07:59:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid' in D:\wamp\www\music\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\wamp\www\music\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php(34): CDbCommand->queryAll()
+#2 D:\wamp\www\music\framework\web\auth\CWebUser.php(806): SDbAuthManager->checkAccess('system', NULL, Array)
+#3 D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php(51): CWebUser->checkAccess('system')
+#4 D:\wamp\www\music\framework\web\CController.php(306): AuthitemController->beforeAction(Object(CInlineAction))
+#5 D:\wamp\www\music\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\music\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('install')
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/music/app/index.php?r=srbac/authitem/install
+---
+2014/06/03 07:59:31 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `items`.
+in D:\wamp\www\music\app\protected\modules\srbac\models\AuthItem.php (40)
+in D:\wamp\www\music\app\protected\modules\srbac\SrbacModule.php (248)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (43)
+2014/06/03 07:59:31 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `items`.
+in D:\wamp\www\music\app\protected\modules\srbac\models\AuthItem.php (40)
+in D:\wamp\www\music\app\protected\modules\srbac\SrbacModule.php (248)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (43)
+2014/06/03 07:59:31 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid.
+in D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php (34)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (51)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 07:59:31 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid' in D:\wamp\www\music\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\wamp\www\music\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php(34): CDbCommand->queryAll()
+#2 D:\wamp\www\music\framework\web\auth\CWebUser.php(806): SDbAuthManager->checkAccess('system', NULL, Array)
+#3 D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php(51): CWebUser->checkAccess('system')
+#4 D:\wamp\www\music\framework\web\CController.php(306): AuthitemController->beforeAction(Object(CInlineAction))
+#5 D:\wamp\www\music\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\music\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('install')
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/music/app/index.php?r=srbac/authitem/install
+---
+2014/06/03 08:01:11 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `items`.
+in D:\wamp\www\music\app\protected\modules\srbac\models\AuthItem.php (40)
+in D:\wamp\www\music\app\protected\modules\srbac\SrbacModule.php (248)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (43)
+2014/06/03 08:01:11 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid.
+in D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php (34)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (51)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 08:01:11 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid' in D:\wamp\www\music\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\wamp\www\music\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php(34): CDbCommand->queryAll()
+#2 D:\wamp\www\music\framework\web\auth\CWebUser.php(806): SDbAuthManager->checkAccess('system', NULL, Array)
+#3 D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php(51): CWebUser->checkAccess('system')
+#4 D:\wamp\www\music\framework\web\CController.php(306): AuthitemController->beforeAction(Object(CInlineAction))
+#5 D:\wamp\www\music\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\music\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('install')
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/music/app/index.php?r=srbac/authitem/install
+---
+2014/06/03 08:01:12 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `items`.
+in D:\wamp\www\music\app\protected\modules\srbac\models\AuthItem.php (40)
+in D:\wamp\www\music\app\protected\modules\srbac\SrbacModule.php (248)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (43)
+2014/06/03 08:01:12 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid.
+in D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php (34)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (51)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 08:01:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid' in D:\wamp\www\music\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\wamp\www\music\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php(34): CDbCommand->queryAll()
+#2 D:\wamp\www\music\framework\web\auth\CWebUser.php(806): SDbAuthManager->checkAccess('system', NULL, Array)
+#3 D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php(51): CWebUser->checkAccess('system')
+#4 D:\wamp\www\music\framework\web\CController.php(306): AuthitemController->beforeAction(Object(CInlineAction))
+#5 D:\wamp\www\music\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\music\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('install')
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/music/app/index.php?r=srbac/authitem/install
+---
+2014/06/03 08:01:12 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `items`.
+in D:\wamp\www\music\app\protected\modules\srbac\models\AuthItem.php (40)
+in D:\wamp\www\music\app\protected\modules\srbac\SrbacModule.php (248)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (43)
+2014/06/03 08:01:12 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid.
+in D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php (34)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (51)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 08:01:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid' in D:\wamp\www\music\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\wamp\www\music\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php(34): CDbCommand->queryAll()
+#2 D:\wamp\www\music\framework\web\auth\CWebUser.php(806): SDbAuthManager->checkAccess('system', NULL, Array)
+#3 D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php(51): CWebUser->checkAccess('system')
+#4 D:\wamp\www\music\framework\web\CController.php(306): AuthitemController->beforeAction(Object(CInlineAction))
+#5 D:\wamp\www\music\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\music\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('install')
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/music/app/index.php?r=srbac/authitem/install
+---
+2014/06/03 08:01:12 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `items`.
+in D:\wamp\www\music\app\protected\modules\srbac\models\AuthItem.php (40)
+in D:\wamp\www\music\app\protected\modules\srbac\SrbacModule.php (248)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (43)
+2014/06/03 08:01:12 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid.
+in D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php (34)
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (51)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 08:01:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'music.items' doesn't exist. The SQL statement executed was: SELECT name, type, description, t1.bizrule, t1.data, t2.bizrule AS bizrule2, t2.data AS data2 FROM items t1, assignments t2 WHERE name=itemname AND userid=:userid' in D:\wamp\www\music\framework\db\CDbCommand.php:541
+Stack trace:
+#0 D:\wamp\www\music\framework\db\CDbCommand.php(395): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\music\app\protected\modules\srbac\components\SDbAuthManager.php(34): CDbCommand->queryAll()
+#2 D:\wamp\www\music\framework\web\auth\CWebUser.php(806): SDbAuthManager->checkAccess('system', NULL, Array)
+#3 D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php(51): CWebUser->checkAccess('system')
+#4 D:\wamp\www\music\framework\web\CController.php(306): AuthitemController->beforeAction(Object(CInlineAction))
+#5 D:\wamp\www\music\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\music\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('install')
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/music/app/index.php?r=srbac/authitem/install
+---
+2014/06/03 08:26:35 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'adminUser' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `authitem` (`name`, `type`, `description`, `bizrule`, `data`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (355)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 08:26:57 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'adminUser' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `authitem` (`name`, `type`, `description`, `bizrule`, `data`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (355)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 08:28:44 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'adminSetting' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `authitem` (`name`, `type`, `description`, `bizrule`, `data`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (355)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 08:37:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "user"。' in D:\wamp\www\music\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#1 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\www\music\app\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/music/app/?r=user
+---
+2014/06/03 08:53:32 [error] [php] Undefined variable: valuesArray (D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php:571)
+Stack trace:
+#0 D:\wamp\www\music\framework\web\CController.php(286): AuthitemController->runAction()
+#1 D:\wamp\www\music\framework\web\CController.php(265): AuthitemController->runActionWithFilters()
+#2 D:\wamp\www\music\framework\web\CWebApplication.php(282): AuthitemController->run()
+#3 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=srbac/authitem/autocomplete&q=guse&limit=10&timestamp=1401778412483
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (571)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 08:56:35 [error] [php] Undefined variable: valuesArray (D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php:571)
+Stack trace:
+#0 D:\wamp\www\music\framework\web\CController.php(286): AuthitemController->runAction()
+#1 D:\wamp\www\music\framework\web\CController.php(265): AuthitemController->runActionWithFilters()
+#2 D:\wamp\www\music\framework\web\CWebApplication.php(282): AuthitemController->run()
+#3 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=srbac/authitem/autocomplete&q=adin&limit=10&timestamp=1401778595602
+in D:\wamp\www\music\app\protected\modules\srbac\controllers\AuthitemController.php (571)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 09:00:49 [error] [exception.CException] exception 'CException' with message '属性 "AdminController.breadcrumbs" 未被定义.' in D:\wamp\www\music\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\wamp\www\music\app\protected\views\admin\index.php(4): CComponent->__set('breadcrumbs', Array)
+#1 D:\wamp\www\music\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\mus...')
+#2 D:\wamp\www\music\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\mus...', NULL, true)
+#3 D:\wamp\www\music\framework\web\CController.php(869): CBaseController->renderFile('D:\\wamp\\www\\mus...', NULL, true)
+#4 D:\wamp\www\music\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#5 D:\wamp\www\music\app\protected\controllers\AdminController.php(6): CController->render('index')
+#6 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): AdminController->actionIndex()
+#7 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\music\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\music\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('')
+#11 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#12 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 D:\wamp\www\music\app\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/music/app/index.php?r=admin
+---
+2014/06/03 10:15:02 [error] [exception.CException] exception 'CException' with message '属性 "CWebApplication.bootstrap" 未被定义.' in D:\wamp\www\music\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\wamp\www\music\framework\base\CModule.php(105): CComponent->__get('bootstrap')
+#1 D:\wamp\www\music\app\protected\views\layouts\main.php(20): CModule->__get('bootstrap')
+#2 D:\wamp\www\music\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\mus...')
+#3 D:\wamp\www\music\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\mus...', Array, true)
+#4 D:\wamp\www\music\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('D:\\wamp\\www\\mus...', Array, true)
+#5 D:\wamp\www\music\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#6 D:\wamp\www\music\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#7 D:\wamp\www\music\framework\web\CBaseController.php(206): COutputProcessor->run()
+#8 D:\wamp\www\music\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#9 D:\wamp\www\music\app\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#10 D:\wamp\www\music\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\mus...')
+#11 D:\wamp\www\music\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\mus...', Array, true)
+#12 D:\wamp\www\music\framework\web\CController.php(784): CBaseController->renderFile('D:\\wamp\\www\\mus...', Array, true)
+#13 D:\wamp\www\music\app\protected\modules\srbac\controllers\SBaseController.php(94): CController->render('srbac.views.aut...', Array)
+#14 D:\wamp\www\music\app\protected\modules\srbac\controllers\SBaseController.php(60): SBaseController->onUnauthorizedAccess()
+#15 D:\wamp\www\music\framework\web\CController.php(306): SBaseController->beforeAction(Object(CInlineAction))
+#16 D:\wamp\www\music\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#17 D:\wamp\www\music\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('apiGet')
+#19 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/apiGet')
+#20 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#21 D:\wamp\www\music\app\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/music/app/index.php?r=admin/apiGet
+---
+2014/06/03 10:20:17 [error] [php] Undefined variable: model (D:\wamp\www\music\app\protected\views\image\upload.php:19)
+Stack trace:
+#0 D:\wamp\www\music\framework\web\CController.php(869): ImageController->renderFile()
+#1 D:\wamp\www\music\framework\web\CController.php(782): ImageController->renderPartial()
+#2 D:\wamp\www\music\app\protected\controllers\ImageController.php(16): ImageController->render()
+#3 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): ImageController->actionUpload()
+#4 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#6 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=IMAGE/UPLOAD
+in D:\wamp\www\music\app\protected\views\image\upload.php (19)
+in D:\wamp\www\music\app\protected\controllers\ImageController.php (16)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 10:21:36 [error] [php] Undefined variable: model (D:\wamp\www\music\app\protected\views\image\upload.php:19)
+Stack trace:
+#0 D:\wamp\www\music\framework\web\CController.php(869): ImageController->renderFile()
+#1 D:\wamp\www\music\framework\web\CController.php(782): ImageController->renderPartial()
+#2 D:\wamp\www\music\app\protected\controllers\ImageController.php(16): ImageController->render()
+#3 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): ImageController->actionUpload()
+#4 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#6 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=IMAGE/UPLOAD
+in D:\wamp\www\music\app\protected\views\image\upload.php (19)
+in D:\wamp\www\music\app\protected\controllers\ImageController.php (16)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 10:21:37 [error] [php] Undefined variable: model (D:\wamp\www\music\app\protected\views\image\upload.php:19)
+Stack trace:
+#0 D:\wamp\www\music\framework\web\CController.php(869): ImageController->renderFile()
+#1 D:\wamp\www\music\framework\web\CController.php(782): ImageController->renderPartial()
+#2 D:\wamp\www\music\app\protected\controllers\ImageController.php(16): ImageController->render()
+#3 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): ImageController->actionUpload()
+#4 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#6 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=IMAGE/UPLOAD
+in D:\wamp\www\music\app\protected\views\image\upload.php (19)
+in D:\wamp\www\music\app\protected\controllers\ImageController.php (16)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 10:21:37 [error] [php] Undefined variable: model (D:\wamp\www\music\app\protected\views\image\upload.php:19)
+Stack trace:
+#0 D:\wamp\www\music\framework\web\CController.php(869): ImageController->renderFile()
+#1 D:\wamp\www\music\framework\web\CController.php(782): ImageController->renderPartial()
+#2 D:\wamp\www\music\app\protected\controllers\ImageController.php(16): ImageController->render()
+#3 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): ImageController->actionUpload()
+#4 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#6 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=IMAGE/UPLOAD
+in D:\wamp\www\music\app\protected\views\image\upload.php (19)
+in D:\wamp\www\music\app\protected\controllers\ImageController.php (16)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 10:21:37 [error] [php] Undefined variable: model (D:\wamp\www\music\app\protected\views\image\upload.php:19)
+Stack trace:
+#0 D:\wamp\www\music\framework\web\CController.php(869): ImageController->renderFile()
+#1 D:\wamp\www\music\framework\web\CController.php(782): ImageController->renderPartial()
+#2 D:\wamp\www\music\app\protected\controllers\ImageController.php(16): ImageController->render()
+#3 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): ImageController->actionUpload()
+#4 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#6 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=IMAGE/UPLOAD
+in D:\wamp\www\music\app\protected\views\image\upload.php (19)
+in D:\wamp\www\music\app\protected\controllers\ImageController.php (16)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 10:47:03 [error] [php] Undefined variable: model (D:\wamp\www\music\app\protected\views\image\upload.php:18)
+Stack trace:
+#0 D:\wamp\www\music\framework\web\CController.php(869): ImageController->renderFile()
+#1 D:\wamp\www\music\framework\web\CController.php(782): ImageController->renderPartial()
+#2 D:\wamp\www\music\app\protected\controllers\ImageController.php(16): ImageController->render()
+#3 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): ImageController->actionUpload()
+#4 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#6 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=IMAGE/UPLOAD
+in D:\wamp\www\music\app\protected\views\image\upload.php (18)
+in D:\wamp\www\music\app\protected\controllers\ImageController.php (16)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 10:48:00 [error] [php] Undefined variable: model (D:\wamp\www\music\app\protected\views\image\upload.php:18)
+Stack trace:
+#0 D:\wamp\www\music\framework\web\CController.php(869): ImageController->renderFile()
+#1 D:\wamp\www\music\framework\web\CController.php(782): ImageController->renderPartial()
+#2 D:\wamp\www\music\app\protected\controllers\ImageController.php(16): ImageController->render()
+#3 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): ImageController->actionUpload()
+#4 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#6 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=IMAGE/UPLOAD
+in D:\wamp\www\music\app\protected\views\image\upload.php (18)
+in D:\wamp\www\music\app\protected\controllers\ImageController.php (16)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 11:42:16 [error] [php] Undefined index: userfile (D:\wamp\www\music\app\protected\controllers\ImageController.php:15)
+Stack trace:
+#0 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#1 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#2 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#3 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=IMAGE/UPLOAD
+in D:\wamp\www\music\app\protected\controllers\ImageController.php (15)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 11:42:29 [error] [php] Undefined index: save_url (D:\wamp\www\music\app\protected\controllers\ImageController.php:15)
+Stack trace:
+#0 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#1 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#2 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#3 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=IMAGE/UPLOAD
+in D:\wamp\www\music\app\protected\controllers\ImageController.php (15)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 11:45:02 [error] [php] Undefined index: save_url (D:\wamp\www\music\app\protected\controllers\ImageController.php:15)
+Stack trace:
+#0 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#1 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#2 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#3 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=IMAGE/UPLOAD
+in D:\wamp\www\music\app\protected\controllers\ImageController.php (15)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 11:45:42 [error] [php] Undefined variable: attach (D:\wamp\www\music\app\protected\controllers\ImageController.php:16)
+Stack trace:
+#0 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#1 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#2 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#3 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=IMAGE/UPLOAD
+in D:\wamp\www\music\app\protected\controllers\ImageController.php (16)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 11:54:59 [error] [php] Undefined variable: attach (D:\wamp\www\music\app\protected\controllers\ImageController.php:15)
+Stack trace:
+#0 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#1 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#2 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#3 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=Image/upload
+in D:\wamp\www\music\app\protected\controllers\ImageController.php (15)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/03 13:12:52 [error] [php] move_uploaded_file(/music/app/uploads/): failed to open stream: No such file or directory (D:\wamp\www\music\framework\web\CUploadedFile.php:196)
+Stack trace:
+#0 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): ImageController->actionUpload()
+#1 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#3 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#4 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#5 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#7 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=Image/upload
+in D:\wamp\www\music\app\protected\controllers\ImageController.php (20)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/04 03:31:05 [error] [php] Undefined index: saveRule (D:\wamp\www\music\app\protected\extensions\XUpload.php:61)
+Stack trace:
+#0 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#2 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#3 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#4 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=Image/upload
+in D:\wamp\www\music\app\protected\extensions\XUpload.php (61)
+in D:\wamp\www\music\app\protected\controllers\ImageController.php (14)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/04 03:59:23 [error] [php] Undefined index: saveRule (D:\wamp\www\music\app\protected\extensions\XUpload.php:61)
+Stack trace:
+#0 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#2 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#3 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#4 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=Image/upload
+in D:\wamp\www\music\app\protected\extensions\XUpload.php (61)
+in D:\wamp\www\music\app\protected\controllers\ImageController.php (14)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/04 04:02:49 [error] [php] Non-static method XUpload::_saveRule() should not be called statically (D:\wamp\www\music\app\protected\extensions\XUpload.php:61)
+Stack trace:
+#0 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): ImageController->actionUpload()
+#1 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#3 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#4 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#5 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#7 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=Image/upload
+in D:\wamp\www\music\app\protected\extensions\XUpload.php (61)
+in D:\wamp\www\music\app\protected\extensions\XUpload.php (61)
+in D:\wamp\www\music\app\protected\controllers\ImageController.php (14)
+2014/06/04 04:08:34 [error] [php] Undefined index: rule (D:\wamp\www\music\app\protected\extensions\XUpload.php:27)
+Stack trace:
+#0 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): ImageController->actionUpload()
+#1 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#3 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#4 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#5 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#7 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=Image/upload
+in D:\wamp\www\music\app\protected\extensions\XUpload.php (27)
+in D:\wamp\www\music\app\protected\extensions\XUpload.php (61)
+in D:\wamp\www\music\app\protected\controllers\ImageController.php (14)
+2014/06/04 04:11:55 [error] [php] in_array() expects parameter 2 to be array, string given (D:\wamp\www\music\app\protected\vendors\Tp\UploadFile.class.php:473)
+Stack trace:
+#0 D:\wamp\www\music\app\protected\vendors\Tp\UploadFile.class.php(261): UploadFile->check()
+#1 D:\wamp\www\music\app\protected\extensions\XUpload.php(74): UploadFile->uploadOne()
+#2 D:\wamp\www\music\app\protected\controllers\ImageController.php(14): upload()
+#3 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): ImageController->actionUpload()
+#4 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#6 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=Image/upload
+in D:\wamp\www\music\app\protected\vendors\Tp\UploadFile.class.php (473)
+in D:\wamp\www\music\app\protected\vendors\Tp\UploadFile.class.php (422)
+in D:\wamp\www\music\app\protected\vendors\Tp\UploadFile.class.php (261)
+2014/06/04 04:44:14 [error] [php] Undefined index: rule (D:\wamp\www\music\app\protected\extensions\XUpload.php:45)
+Stack trace:
+#0 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): ImageController->actionUpload()
+#1 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#3 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#4 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#5 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#7 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=Image/upload
+in D:\wamp\www\music\app\protected\extensions\XUpload.php (45)
+in D:\wamp\www\music\app\protected\extensions\XUpload.php (87)
+in D:\wamp\www\music\app\protected\controllers\ImageController.php (14)
+2014/06/04 05:41:24 [error] [php] include(UploadFile.php): failed to open stream: No such file or directory (D:\wamp\www\music\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\www\music\app\protected\extensions\XUpload.php(60): spl_autoload_call()
+#1 D:\wamp\www\music\app\protected\controllers\ImageController.php(18): upload()
+#2 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): ImageController->actionUpload()
+#3 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#5 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#6 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=Image/upload
+in D:\wamp\www\music\app\protected\extensions\XUpload.php (60)
+in D:\wamp\www\music\app\protected\controllers\ImageController.php (18)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/04 06:02:50 [error] [php] The use statement with non-compound name 'UploadFile' has no effect (D:\wamp\www\music\app\protected\extensions\XUpload.php:12)
+Stack trace:
+#0 D:\wamp\www\music\app\protected\controllers\ImageController.php(18): spl_autoload_call()
+#1 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): ImageController->actionUpload()
+#2 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#4 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#5 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#6 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#8 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=Image/upload
+in D:\wamp\www\music\app\protected\controllers\ImageController.php (18)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/04 07:11:40 [error] [php] include(UploadFile.php): failed to open stream: No such file or directory (D:\wamp\www\music\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\www\music\app\protected\extensions\XUpload.php(62): spl_autoload_call()
+#1 D:\wamp\www\music\app\protected\controllers\ImageController.php(18): upload()
+#2 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): ImageController->actionUpload()
+#3 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#5 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#6 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=Image/upload
+in D:\wamp\www\music\app\protected\extensions\XUpload.php (62)
+in D:\wamp\www\music\app\protected\controllers\ImageController.php (18)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/04 07:16:32 [error] [php] require_once(Tp/UploadFile.class.php): failed to open stream: No such file or directory (D:\wamp\www\music\app\protected\extensions\XUpload.php:61)
+Stack trace:
+#0 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): ImageController->actionUpload()
+#1 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#3 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#4 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#5 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#7 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=Image/upload
+in D:\wamp\www\music\app\protected\extensions\XUpload.php (61)
+in D:\wamp\www\music\app\protected\extensions\XUpload.php (61)
+in D:\wamp\www\music\app\protected\controllers\ImageController.php (18)
+2014/06/04 07:16:58 [error] [php] include(UploadFile.php): failed to open stream: No such file or directory (D:\wamp\www\music\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\www\music\app\protected\extensions\XUpload.php(62): spl_autoload_call()
+#1 D:\wamp\www\music\app\protected\controllers\ImageController.php(18): upload()
+#2 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): ImageController->actionUpload()
+#3 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#5 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#6 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=Image/upload
+in D:\wamp\www\music\app\protected\extensions\XUpload.php (62)
+in D:\wamp\www\music\app\protected\controllers\ImageController.php (18)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/04 08:03:48 [error] [php] imagejpeg(upload/thumb/thumb_2014060414018618287862.jpg): failed to open stream: No such file or directory (D:\wamp\www\music\app\protected\vendors\Tp\Image.class.php:225)
+Stack trace:
+#0 D:\wamp\www\music\app\protected\vendors\Tp\UploadFile.class.php(266): UploadFile->save()
+#1 D:\wamp\www\music\app\protected\extensions\XUpload.php(82): UploadFile->uploadOne()
+#2 D:\wamp\www\music\app\protected\controllers\ImageController.php(19): upload()
+#3 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): ImageController->actionUpload()
+#4 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#6 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=Image/upload
+in D:\wamp\www\music\app\protected\vendors\Tp\Image.class.php (225)
+in D:\wamp\www\music\app\protected\vendors\Tp\UploadFile.class.php (132)
+in D:\wamp\www\music\app\protected\vendors\Tp\UploadFile.class.php (266)
+2014/06/04 08:04:11 [error] [php] imagejpeg(uploads/thumb/thumb_2014060414018618516158.jpg): failed to open stream: No such file or directory (D:\wamp\www\music\app\protected\vendors\Tp\Image.class.php:225)
+Stack trace:
+#0 D:\wamp\www\music\app\protected\vendors\Tp\UploadFile.class.php(266): UploadFile->save()
+#1 D:\wamp\www\music\app\protected\extensions\XUpload.php(82): UploadFile->uploadOne()
+#2 D:\wamp\www\music\app\protected\controllers\ImageController.php(19): upload()
+#3 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): ImageController->actionUpload()
+#4 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#6 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=Image/upload
+in D:\wamp\www\music\app\protected\vendors\Tp\Image.class.php (225)
+in D:\wamp\www\music\app\protected\vendors\Tp\UploadFile.class.php (132)
+in D:\wamp\www\music\app\protected\vendors\Tp\UploadFile.class.php (266)
+2014/06/04 08:05:52 [error] [php] imagejpeg(thumb/thumb_2014060414018619527805.jpg): failed to open stream: No such file or directory (D:\wamp\www\music\app\protected\vendors\Tp\Image.class.php:225)
+Stack trace:
+#0 D:\wamp\www\music\app\protected\vendors\Tp\UploadFile.class.php(266): UploadFile->save()
+#1 D:\wamp\www\music\app\protected\extensions\XUpload.php(82): UploadFile->uploadOne()
+#2 D:\wamp\www\music\app\protected\controllers\ImageController.php(19): upload()
+#3 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): ImageController->actionUpload()
+#4 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#6 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=Image/upload
+in D:\wamp\www\music\app\protected\vendors\Tp\Image.class.php (225)
+in D:\wamp\www\music\app\protected\vendors\Tp\UploadFile.class.php (132)
+in D:\wamp\www\music\app\protected\vendors\Tp\UploadFile.class.php (266)
+2014/06/04 08:20:26 [error] [php] imagejpeg(uploads/20140604//thumb/thumb_2014060414018628266419.jpg): failed to open stream: No such file or directory (D:\wamp\www\music\app\protected\vendors\Tp\Image.class.php:225)
+Stack trace:
+#0 D:\wamp\www\music\app\protected\vendors\Tp\UploadFile.class.php(266): UploadFile->save()
+#1 D:\wamp\www\music\app\protected\extensions\XUpload.php(82): UploadFile->uploadOne()
+#2 D:\wamp\www\music\app\protected\controllers\ImageController.php(19): upload()
+#3 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): ImageController->actionUpload()
+#4 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#6 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=Image/upload
+in D:\wamp\www\music\app\protected\vendors\Tp\Image.class.php (225)
+in D:\wamp\www\music\app\protected\vendors\Tp\UploadFile.class.php (132)
+in D:\wamp\www\music\app\protected\vendors\Tp\UploadFile.class.php (266)
+2014/06/04 08:20:35 [error] [php] imagejpeg(uploads/20140604/thumb/thumb_2014060414018628351292.jpg): failed to open stream: No such file or directory (D:\wamp\www\music\app\protected\vendors\Tp\Image.class.php:225)
+Stack trace:
+#0 D:\wamp\www\music\app\protected\vendors\Tp\UploadFile.class.php(266): UploadFile->save()
+#1 D:\wamp\www\music\app\protected\extensions\XUpload.php(82): UploadFile->uploadOne()
+#2 D:\wamp\www\music\app\protected\controllers\ImageController.php(19): upload()
+#3 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): ImageController->actionUpload()
+#4 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#6 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=Image/upload
+in D:\wamp\www\music\app\protected\vendors\Tp\Image.class.php (225)
+in D:\wamp\www\music\app\protected\vendors\Tp\UploadFile.class.php (132)
+in D:\wamp\www\music\app\protected\vendors\Tp\UploadFile.class.php (266)
+2014/06/04 08:22:12 [error] [php] imagejpeg(uploads/20140604/thumb/2014060414018629328089.jpg): failed to open stream: No such file or directory (D:\wamp\www\music\app\protected\vendors\Tp\Image.class.php:225)
+Stack trace:
+#0 D:\wamp\www\music\app\protected\vendors\Tp\UploadFile.class.php(266): UploadFile->save()
+#1 D:\wamp\www\music\app\protected\extensions\XUpload.php(84): UploadFile->uploadOne()
+#2 D:\wamp\www\music\app\protected\controllers\ImageController.php(19): upload()
+#3 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): ImageController->actionUpload()
+#4 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#6 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=Image/upload
+in D:\wamp\www\music\app\protected\vendors\Tp\Image.class.php (225)
+in D:\wamp\www\music\app\protected\vendors\Tp\UploadFile.class.php (132)
+in D:\wamp\www\music\app\protected\vendors\Tp\UploadFile.class.php (266)
+2014/06/04 09:19:45 [error] [exception.CException] exception 'CException' with message 'Images and its behaviors do not have a method or closure named "getLogger".' in D:\wamp\www\music\framework\base\CComponent.php:265
+Stack trace:
+#0 D:\wamp\www\music\framework\db\ar\CActiveRecord.php(225): CComponent->__call('getLogger', Array)
+#1 D:\wamp\www\music\app\protected\controllers\ImageController.php(31): CActiveRecord->__call('getLogger', Array)
+#2 D:\wamp\www\music\app\protected\controllers\ImageController.php(31): Images->getLogger()
+#3 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): ImageController->actionUpload()
+#4 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\wamp\www\music\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\music\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('upload')
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('Image/upload')
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/music/app/index.php?r=Image/upload
+HTTP_REFERER=http://test.com/music/app/?r=image/upload
+---
+2014/06/04 09:23:04 [error] [php] Missing argument 1 for CModel::getError(), called in D:\wamp\www\music\app\protected\controllers\ImageController.php on line 31 and defined (D:\wamp\www\music\framework\base\CModel.php:370)
+Stack trace:
+#0 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#2 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#3 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#4 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=Image/upload
+in D:\wamp\www\music\app\protected\controllers\ImageController.php (31)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/04 12:20:09 [error] [php] Non-static method XQiniu::upload() should not be called statically, assuming $this from incompatible context (D:\wamp\www\music\app\protected\controllers\ImageController.php:24)
+Stack trace:
+#0 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#1 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#2 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#3 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=Image/upload
+in D:\wamp\www\music\app\protected\controllers\ImageController.php (24)
+in D:\wamp\www\music\app\index.php (13)
+2014/06/04 12:40:59 [error] [php] curl_setopt_array(): The usage of the @filename API for file uploading is deprecated. Please use the CURLFile class instead (D:\wamp\www\music\app\protected\vendors\qiniu\http.php:133)
+Stack trace:
+#0 D:\wamp\www\music\app\protected\vendors\qiniu\http.php(235): Qiniu_HttpClient->RoundTrip()
+#1 D:\wamp\www\music\app\protected\vendors\qiniu\io.php(67): Qiniu_Client_CallWithForm()
+#2 D:\wamp\www\music\app\protected\extensions\XQiniu.php(35): Qiniu_PutFile()
+#3 D:\wamp\www\music\app\protected\controllers\ImageController.php(24): upload()
+#4 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): ImageController->actionUpload()
+#5 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#7 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#9 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=Image/upload
+in D:\wamp\www\music\app\protected\vendors\qiniu\http.php (133)
+in D:\wamp\www\music\app\protected\vendors\qiniu\http.php (153)
+in D:\wamp\www\music\app\protected\vendors\qiniu\http.php (235)
+2014/06/04 12:47:03 [error] [php] curl_setopt_array(): The usage of the @filename API for file uploading is deprecated. Please use the CURLFile class instead (D:\wamp\www\music\app\protected\vendors\qiniu\http.php:133)
+Stack trace:
+#0 D:\wamp\www\music\app\protected\vendors\qiniu\http.php(235): Qiniu_HttpClient->RoundTrip()
+#1 D:\wamp\www\music\app\protected\vendors\qiniu\io.php(67): Qiniu_Client_CallWithForm()
+#2 D:\wamp\www\music\app\protected\extensions\XQiniu.php(35): Qiniu_PutFile()
+#3 D:\wamp\www\music\app\protected\controllers\ImageController.php(24): upload()
+#4 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): ImageController->actionUpload()
+#5 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#7 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#9 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=Image/upload
+in D:\wamp\www\music\app\protected\vendors\qiniu\http.php (133)
+in D:\wamp\www\music\app\protected\vendors\qiniu\http.php (153)
+in D:\wamp\www\music\app\protected\vendors\qiniu\http.php (235)
+2014/06/04 12:50:56 [error] [php] curl_setopt_array(): The usage of the @filename API for file uploading is deprecated. Please use the CURLFile class instead (D:\wamp\www\music\app\protected\vendors\qiniu\http.php:143)
+Stack trace:
+#0 D:\wamp\www\music\app\protected\vendors\qiniu\http.php(271): Qiniu_HttpClient->RoundTrip()
+#1 D:\wamp\www\music\app\protected\vendors\qiniu\io.php(94): Qiniu_Client_CallWithForm()
+#2 D:\wamp\www\music\app\protected\extensions\XQiniu.php(35): Qiniu_PutFile()
+#3 D:\wamp\www\music\app\protected\controllers\ImageController.php(24): upload()
+#4 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): ImageController->actionUpload()
+#5 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#7 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#9 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 D:\wamp\www\music\app\index.php(13): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=Image/upload
+in D:\wamp\www\music\app\protected\vendors\qiniu\http.php (143)
+in D:\wamp\www\music\app\protected\vendors\qiniu\http.php (189)
+in D:\wamp\www\music\app\protected\vendors\qiniu\http.php (271)
+2014/06/05 05:41:33 [error] [php] require_once(Qiniu.php/rs.php): failed to open stream: No such file or directory (D:\wamp\www\music\app\protected\extensions\XQiniu.php:23)
+Stack trace:
+#0 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): ImageController->actionApi()
+#1 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#3 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#4 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#5 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#7 D:\wamp\www\music\app\index.php(15): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=image/api&type=getUploadSecretKey
+in D:\wamp\www\music\app\protected\extensions\XQiniu.php (23)
+in D:\wamp\www\music\app\protected\extensions\XQiniu.php (23)
+in D:\wamp\www\music\app\protected\controllers\ImageController.php (15)
+2014/06/05 07:28:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "login" 动作.' in D:\wamp\www\music\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\music\framework\web\CController.php(270): CController->missingAction('login')
+#1 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('login')
+#2 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('image/login')
+#3 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\wamp\www\music\app\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/music/app/index.php?r=image/login
+---
+2014/06/05 10:02:52 [error] [php] Undefined variable: model (D:\wamp\www\music\app\protected\controllers\ImageController.php:100)
+Stack trace:
+#0 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#1 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#2 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#3 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\wamp\www\music\app\index.php(15): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=image/uploadaudio
+in D:\wamp\www\music\app\protected\controllers\ImageController.php (100)
+in D:\wamp\www\music\app\index.php (15)
+2014/06/05 10:59:19 [error] [php] Undefined variable: token (D:\wamp\www\music\app\protected\views\image\avthumb.php:19)
+Stack trace:
+#0 D:\wamp\www\music\framework\web\CController.php(869): ImageController->renderFile()
+#1 D:\wamp\www\music\framework\web\CController.php(782): ImageController->renderPartial()
+#2 D:\wamp\www\music\app\protected\controllers\ImageController.php(20): ImageController->render()
+#3 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): ImageController->actionAvthumb()
+#4 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#6 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(15): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=Image/avthumb
+in D:\wamp\www\music\app\protected\views\image\avthumb.php (19)
+in D:\wamp\www\music\app\protected\controllers\ImageController.php (20)
+in D:\wamp\www\music\app\index.php (15)
+2014/06/06 03:47:27 [error] [php] array_key_exists() expects parameter 2 to be array, null given (D:\wamp\www\music\app\protected\vendors\Cloud\sdk\QiniuAudioVisualSDK.class.php:66)
+Stack trace:
+#0 D:\wamp\www\music\app\protected\extensions\XCloud.php(24): QiniuAudioVisualSDK->MakeRequest()
+#1 D:\wamp\www\music\app\protected\controllers\ImageController.php(7): hlsMediaSlicing()
+#2 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): ImageController->actionIndex()
+#3 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#5 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#6 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\wamp\www\music\app\index.php(15): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=image/index
+in D:\wamp\www\music\app\protected\vendors\Cloud\sdk\QiniuAudioVisualSDK.class.php (66)
+in D:\wamp\www\music\app\protected\vendors\Cloud\sdk\QiniuAudioVisualSDK.class.php (80)
+in D:\wamp\www\music\app\protected\extensions\XCloud.php (24)
+2014/06/06 11:24:55 [error] [php] Undefined index: audio_name (D:\wamp\www\music\app\protected\controllers\ImageController.php:82)
+Stack trace:
+#0 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#1 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#2 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#3 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\wamp\www\music\app\index.php(15): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=Image/uploadaudio
+in D:\wamp\www\music\app\protected\controllers\ImageController.php (82)
+in D:\wamp\www\music\app\index.php (15)
+2014/06/06 11:25:36 [error] [php] Undefined index: audio_name (D:\wamp\www\music\app\protected\controllers\ImageController.php:82)
+Stack trace:
+#0 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#1 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#2 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#3 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\wamp\www\music\app\index.php(15): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=Image/uploadaudio
+in D:\wamp\www\music\app\protected\controllers\ImageController.php (82)
+in D:\wamp\www\music\app\index.php (15)
+2014/06/06 11:27:05 [error] [php] Undefined index: audio_name (D:\wamp\www\music\app\protected\controllers\ImageController.php:82)
+Stack trace:
+#0 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#1 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#2 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#3 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\wamp\www\music\app\index.php(15): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=Image/uploadaudio
+in D:\wamp\www\music\app\protected\controllers\ImageController.php (82)
+in D:\wamp\www\music\app\index.php (15)
+2014/06/09 03:50:27 [error] [php] Undefined index: audio_name (D:\wamp\www\music\app\protected\controllers\ImageController.php:82)
+Stack trace:
+#0 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#1 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#2 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#3 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\wamp\www\music\app\index.php(15): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=Image/uploadaudio
+in D:\wamp\www\music\app\protected\controllers\ImageController.php (82)
+in D:\wamp\www\music\app\index.php (15)
+2014/06/09 03:52:07 [error] [php] Undefined index: audio_name (D:\wamp\www\music\app\protected\controllers\ImageController.php:82)
+Stack trace:
+#0 D:\wamp\www\music\framework\web\CController.php(286): ImageController->runAction()
+#1 D:\wamp\www\music\framework\web\CController.php(265): ImageController->runActionWithFilters()
+#2 D:\wamp\www\music\framework\web\CWebApplication.php(282): ImageController->run()
+#3 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#5 D:\wamp\www\music\app\index.php(15): CWebApplication->run()
+REQUEST_URI=/music/app/index.php?r=Image/uploadaudio
+in D:\wamp\www\music\app\protected\controllers\ImageController.php (82)
+in D:\wamp\www\music\app\index.php (15)
+2014/06/17 09:42:40 [error] [exception.CException] exception 'CException' with message 'CJuiDatePicker 必须给定 "model" 与 "attribute" 或 "name" 属性值.' in D:\wamp\www\music\framework\zii\widgets\jui\CJuiInputWidget.php:52
+Stack trace:
+#0 D:\wamp\www\music\framework\zii\widgets\jui\CJuiDatePicker.php(70): CJuiInputWidget->resolveNameID()
+#1 D:\wamp\www\music\framework\web\CBaseController.php(173): CJuiDatePicker->run()
+#2 D:\wamp\www\music\app\protected\views\site\index.php(15): CBaseController->widget('zii.widgets.jui...', Array)
+#3 D:\wamp\www\music\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\mus...')
+#4 D:\wamp\www\music\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\mus...', NULL, true)
+#5 D:\wamp\www\music\framework\web\CController.php(869): CBaseController->renderFile('D:\\wamp\\www\\mus...', NULL, true)
+#6 D:\wamp\www\music\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#7 D:\wamp\www\music\app\protected\controllers\SiteController.php(33): CController->render('index')
+#8 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#9 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 D:\wamp\www\music\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 D:\wamp\www\music\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('')
+#13 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#14 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\wamp\www\music\app\index.php(15): CApplication->run()
+#16 {main}
+REQUEST_URI=/music/app/
+HTTP_REFERER=http://test.com/music/
+---
+2014/06/17 09:48:29 [error] [php] Undefined variable: query (D:\wamp\www\music\app\protected\views\site\index.php:15)
+Stack trace:
+#0 D:\wamp\www\music\framework\web\CController.php(869): SiteController->renderFile()
+#1 D:\wamp\www\music\framework\web\CController.php(782): SiteController->renderPartial()
+#2 D:\wamp\www\music\app\protected\controllers\SiteController.php(33): SiteController->render()
+#3 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\music\framework\web\CController.php(286): SiteController->runAction()
+#6 D:\wamp\www\music\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): SiteController->run()
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(15): CWebApplication->run()
+REQUEST_URI=/music/app/
+in D:\wamp\www\music\app\protected\views\site\index.php (15)
+in D:\wamp\www\music\app\protected\controllers\SiteController.php (33)
+in D:\wamp\www\music\app\index.php (15)
+2014/06/17 10:11:30 [error] [php] include(Date.php): failed to open stream: No such file or directory (D:\wamp\www\music\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\www\music\app\protected\views\site\index.php(14): spl_autoload_call()
+#1 D:\wamp\www\music\framework\web\CBaseController.php(126): require()
+#2 D:\wamp\www\music\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#3 D:\wamp\www\music\framework\web\CController.php(869): SiteController->renderFile()
+#4 D:\wamp\www\music\framework\web\CController.php(782): SiteController->renderPartial()
+#5 D:\wamp\www\music\app\protected\controllers\SiteController.php(33): SiteController->render()
+#6 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#7 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 D:\wamp\www\music\framework\web\CController.php(286): SiteController->runAction()
+#9 D:\wamp\www\music\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 D:\wamp\www\music\framework\web\CWebApplication.php(282): SiteController->run()
+#11 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 D:\wamp\www\music\app\index.php(15): CWebApplication->run()
+REQUEST_URI=/music/app/
+in D:\wamp\www\music\app\protected\views\site\index.php (14)
+in D:\wamp\www\music\app\protected\controllers\SiteController.php (33)
+in D:\wamp\www\music\app\index.php (15)
+2014/06/17 10:27:09 [error] [exception.CException] exception 'CException' with message 'SiteController and its behaviors do not have a method or closure named "begainWidget".' in D:\wamp\www\music\framework\base\CComponent.php:265
+Stack trace:
+#0 D:\wamp\www\music\app\protected\views\site\index.php(38): CComponent->__call('begainWidget', Array)
+#1 D:\wamp\www\music\app\protected\views\site\index.php(38): SiteController->begainWidget('zii.widgets.jui...', Array)
+#2 D:\wamp\www\music\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\mus...')
+#3 D:\wamp\www\music\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\mus...', NULL, true)
+#4 D:\wamp\www\music\framework\web\CController.php(869): CBaseController->renderFile('D:\\wamp\\www\\mus...', NULL, true)
+#5 D:\wamp\www\music\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 D:\wamp\www\music\app\protected\controllers\SiteController.php(33): CController->render('index')
+#7 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\music\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\music\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\wamp\www\music\app\index.php(15): CApplication->run()
+#15 {main}
+REQUEST_URI=/music/app/
+HTTP_REFERER=http://test.com/music/
+---
+2014/06/17 10:27:29 [error] [exception.CException] exception 'CException' with message 'SiteController and its behaviors do not have a method or closure named "begainWidget".' in D:\wamp\www\music\framework\base\CComponent.php:265
+Stack trace:
+#0 D:\wamp\www\music\app\protected\views\site\index.php(38): CComponent->__call('begainWidget', Array)
+#1 D:\wamp\www\music\app\protected\views\site\index.php(38): SiteController->begainWidget('zii.widgets.jui...', Array)
+#2 D:\wamp\www\music\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\mus...')
+#3 D:\wamp\www\music\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\mus...', NULL, true)
+#4 D:\wamp\www\music\framework\web\CController.php(869): CBaseController->renderFile('D:\\wamp\\www\\mus...', NULL, true)
+#5 D:\wamp\www\music\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 D:\wamp\www\music\app\protected\controllers\SiteController.php(33): CController->render('index')
+#7 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\music\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\music\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\wamp\www\music\app\index.php(15): CApplication->run()
+#15 {main}
+REQUEST_URI=/music/app/
+HTTP_REFERER=http://test.com/music/
+---
+2014/06/17 10:27:30 [error] [exception.CException] exception 'CException' with message 'SiteController and its behaviors do not have a method or closure named "begainWidget".' in D:\wamp\www\music\framework\base\CComponent.php:265
+Stack trace:
+#0 D:\wamp\www\music\app\protected\views\site\index.php(38): CComponent->__call('begainWidget', Array)
+#1 D:\wamp\www\music\app\protected\views\site\index.php(38): SiteController->begainWidget('zii.widgets.jui...', Array)
+#2 D:\wamp\www\music\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\mus...')
+#3 D:\wamp\www\music\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\mus...', NULL, true)
+#4 D:\wamp\www\music\framework\web\CController.php(869): CBaseController->renderFile('D:\\wamp\\www\\mus...', NULL, true)
+#5 D:\wamp\www\music\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 D:\wamp\www\music\app\protected\controllers\SiteController.php(33): CController->render('index')
+#7 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\music\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\music\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\wamp\www\music\app\index.php(15): CApplication->run()
+#15 {main}
+REQUEST_URI=/music/app/
+HTTP_REFERER=http://test.com/music/
+---
+2014/06/17 10:27:30 [error] [exception.CException] exception 'CException' with message 'SiteController and its behaviors do not have a method or closure named "begainWidget".' in D:\wamp\www\music\framework\base\CComponent.php:265
+Stack trace:
+#0 D:\wamp\www\music\app\protected\views\site\index.php(38): CComponent->__call('begainWidget', Array)
+#1 D:\wamp\www\music\app\protected\views\site\index.php(38): SiteController->begainWidget('zii.widgets.jui...', Array)
+#2 D:\wamp\www\music\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\mus...')
+#3 D:\wamp\www\music\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\mus...', NULL, true)
+#4 D:\wamp\www\music\framework\web\CController.php(869): CBaseController->renderFile('D:\\wamp\\www\\mus...', NULL, true)
+#5 D:\wamp\www\music\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 D:\wamp\www\music\app\protected\controllers\SiteController.php(33): CController->render('index')
+#7 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\music\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\music\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\wamp\www\music\app\index.php(15): CApplication->run()
+#15 {main}
+REQUEST_URI=/music/app/
+HTTP_REFERER=http://test.com/music/
+---
+2014/06/17 10:27:30 [error] [exception.CException] exception 'CException' with message 'SiteController and its behaviors do not have a method or closure named "begainWidget".' in D:\wamp\www\music\framework\base\CComponent.php:265
+Stack trace:
+#0 D:\wamp\www\music\app\protected\views\site\index.php(38): CComponent->__call('begainWidget', Array)
+#1 D:\wamp\www\music\app\protected\views\site\index.php(38): SiteController->begainWidget('zii.widgets.jui...', Array)
+#2 D:\wamp\www\music\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\mus...')
+#3 D:\wamp\www\music\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\mus...', NULL, true)
+#4 D:\wamp\www\music\framework\web\CController.php(869): CBaseController->renderFile('D:\\wamp\\www\\mus...', NULL, true)
+#5 D:\wamp\www\music\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 D:\wamp\www\music\app\protected\controllers\SiteController.php(33): CController->render('index')
+#7 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\music\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\music\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\wamp\www\music\app\index.php(15): CApplication->run()
+#15 {main}
+REQUEST_URI=/music/app/
+HTTP_REFERER=http://test.com/music/
+---
+2014/06/17 10:27:30 [error] [exception.CException] exception 'CException' with message 'SiteController and its behaviors do not have a method or closure named "begainWidget".' in D:\wamp\www\music\framework\base\CComponent.php:265
+Stack trace:
+#0 D:\wamp\www\music\app\protected\views\site\index.php(38): CComponent->__call('begainWidget', Array)
+#1 D:\wamp\www\music\app\protected\views\site\index.php(38): SiteController->begainWidget('zii.widgets.jui...', Array)
+#2 D:\wamp\www\music\framework\web\CBaseController.php(126): require('D:\\wamp\\www\\mus...')
+#3 D:\wamp\www\music\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\wamp\\www\\mus...', NULL, true)
+#4 D:\wamp\www\music\framework\web\CController.php(869): CBaseController->renderFile('D:\\wamp\\www\\mus...', NULL, true)
+#5 D:\wamp\www\music\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#6 D:\wamp\www\music\app\protected\controllers\SiteController.php(33): CController->render('index')
+#7 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#8 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\wamp\www\music\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\wamp\www\music\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('')
+#12 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#13 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\wamp\www\music\app\index.php(15): CApplication->run()
+#15 {main}
+REQUEST_URI=/music/app/
+HTTP_REFERER=http://test.com/music/
+---
+2014/06/17 10:39:14 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (D:\wamp\www\music\framework\web\helpers\CHtml.php:98)
+Stack trace:
+#0 D:\wamp\www\music\framework\web\helpers\CHtml.php(153): renderAttributes()
+#1 D:\wamp\www\music\framework\web\helpers\CHtml.php(396): tag()
+#2 D:\wamp\www\music\app\protected\views\site\index.php(58): link()
+#3 D:\wamp\www\music\framework\web\CBaseController.php(126): require()
+#4 D:\wamp\www\music\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#5 D:\wamp\www\music\framework\web\CController.php(869): SiteController->renderFile()
+#6 D:\wamp\www\music\framework\web\CController.php(782): SiteController->renderPartial()
+#7 D:\wamp\www\music\app\protected\controllers\SiteController.php(33): SiteController->render()
+#8 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#9 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 D:\wamp\www\music\framework\web\CController.php(286): SiteController->runAction()
+#11 D:\wamp\www\music\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#12 D:\wamp\www\music\framework\web\CWebApplication.php(282): SiteController->run()
+#13 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#15 D:\wamp\www\music\app\index.php(15): CWebApplication->run()
+REQUEST_URI=/music/app/
+in D:\wamp\www\music\app\protected\views\site\index.php (58)
+in D:\wamp\www\music\app\protected\controllers\SiteController.php (33)
+in D:\wamp\www\music\app\index.php (15)
+2014/06/17 11:09:15 [error] [php] Use of undefined constant IMG_URL - assumed 'IMG_URL' (D:\wamp\www\music\app\protected\views\site\index.php:86)
+Stack trace:
+#0 D:\wamp\www\music\framework\web\CController.php(869): SiteController->renderFile()
+#1 D:\wamp\www\music\framework\web\CController.php(782): SiteController->renderPartial()
+#2 D:\wamp\www\music\app\protected\controllers\SiteController.php(33): SiteController->render()
+#3 D:\wamp\www\music\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 D:\wamp\www\music\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\www\music\framework\web\CController.php(286): SiteController->runAction()
+#6 D:\wamp\www\music\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 D:\wamp\www\music\framework\web\CWebApplication.php(282): SiteController->run()
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\www\music\app\index.php(15): CWebApplication->run()
+REQUEST_URI=/music/app/
+in D:\wamp\www\music\app\protected\views\site\index.php (86)
+in D:\wamp\www\music\app\protected\controllers\SiteController.php (33)
+in D:\wamp\www\music\app\index.php (15)
+2014/06/18 08:55:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "indesx" 动作.' in D:\wamp\www\music\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\music\framework\web\CController.php(270): CController->missingAction('indesx')
+#1 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('indesx')
+#2 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('album/indesx')
+#3 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\wamp\www\music\app\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/music/app/index.php?r=album/indesx
+---
+2014/06/18 08:55:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "indes" 动作.' in D:\wamp\www\music\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\www\music\framework\web\CController.php(270): CController->missingAction('indes')
+#1 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('indes')
+#2 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('album/indes')
+#3 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\wamp\www\music\app\index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/music/app/index.php?r=album/indes
+---
+2014/06/18 09:31:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "artlist"。' in D:\wamp\www\music\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('artlist')
+#1 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\www\music\app\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/music/app/index.php?r=artlist
+---
+2014/06/18 09:32:02 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\music\framework\web\CController.php:336
+Stack trace:
+#0 D:\wamp\www\music\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\music\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\music\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\wamp\www\music\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\music\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\music\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\music\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\wamp\www\music\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('view')
+#9 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('artist/view')
+#10 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 D:\wamp\www\music\app\index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/music/app/index.php?r=artist/view
+---
+2014/06/18 09:32:40 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\music\framework\web\CController.php:336
+Stack trace:
+#0 D:\wamp\www\music\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\music\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\music\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 D:\wamp\www\music\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\music\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\music\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\music\framework\web\CController.php(291): CFilterChain->run()
+#7 D:\wamp\www\music\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\music\framework\web\CWebApplication.php(282): CController->run('update')
+#9 D:\wamp\www\music\framework\web\CWebApplication.php(141): CWebApplication->runController('artist/update')
+#10 D:\wamp\www\music\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#11 D:\wamp\www\music\app\index.php(15): CApplication->run()
+#12 {main}
+REQUEST_URI=/music/app/index.php?r=artist/update
+---
